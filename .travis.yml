@@ -15,7 +15,7 @@ script:
 - ansible-galaxy install -p ./ -r .requirements.yml
 - vagrant box add JoergFiedler/FreeBSD-11.2 --provider aws
 - vagrant up --provider aws
-- vagrant ssh -c "test $(sudo iocage exec syslogd ps xa |grep syslogd |wc -l) -eq 1"
+- vagrant ssh -c 'test $(sudo /usr/local/bin/iocage exec syslogd ps xa |grep syslogd |wc -l) -eq 1'
 after_script:
 - vagrant destroy -f
 env:
