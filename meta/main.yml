@@ -9,8 +9,8 @@ galaxy_info:
       versions:
         - 11.2
   galaxy_tags:
-    - FreeBSD
-    - jails
+    - freebsd
+    - jail
     - iocage
     - cloud
     - ec2

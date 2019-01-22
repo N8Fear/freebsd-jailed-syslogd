@@ -20,6 +20,6 @@
 
 - name: Create all.log file
   copy:
-    dest: '{{jail_home.stdout }}/var/log/all.log'
+    dest: '{{ jail_home.stdout }}/var/log/all.log'
     content: ''
     force: no

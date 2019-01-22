@@ -13,4 +13,3 @@
     line: 'include "/etc/pf.anchor.rls-jail.{{ jail_name }}.conf"'
   notify:
     - Reload pf
-
